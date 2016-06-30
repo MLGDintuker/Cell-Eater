@@ -5,13 +5,14 @@
 var canv = document.getElementById("ctx");
 var ctx = canv.getContext("2d");
 var x = 0;
-setInterval(change,20);
+var mouvement = 2;
+setInterval(change,10);
 function change(){
   ctx.clearRect(0,0,700,500);
   x++;
   ctx.fillRect(x,250,50,50);
 if(x == 650){
-movement= -2;
+movement = -2;
 }if(x == 0){
 movement = 2;
  }
